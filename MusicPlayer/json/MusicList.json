@@ -1,0 +1,34 @@
+{
+    "music": [
+        {
+            "name": "First Song",
+            "author": "Author first song",
+            "fileName": "musicDefault",
+            "imageName": "image1"
+        },
+        {
+             "name": "Second Song",
+             "author": "Author second song",
+             "fileName": "musicDefault",
+             "imageName": "image2"
+        },
+        {
+            "name": "Third Song",
+            "author": "Author third song",
+            "fileName": "musicDefault",
+            "imageName": "image3",
+        },
+        {
+            "name": "Fourf Song",
+            "author": "Author fourf song",
+            "fileName": "musicDefault",
+            "imageName": "image4"
+        },
+        {
+            "name": "Fiv Song",
+            "author": "Author fiv song",
+            "fileName": "musicDefault",
+            "imageName": "image5"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XYe-cL-Scq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Music List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MusicListViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yFV-AM-Npz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839.1304347826087" y="88.392857142857139"/>
+        </scene>
+        <!--Song-->
+        <scene sceneID="8wX-O5-NEJ">
+            <objects>
+                <viewController storyboardIdentifier="Song" title="Song" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0dx-Gb-epQ" customClass="SongViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iei-pf-oW4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="RB9-fh-Cyw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sVY-OR-xfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2663.768115942029" y="95.758928571428569"/>
+        </scene>
+        <!--List Music-->
+        <scene sceneID="rkh-3X-PKa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bc6-ed-cxv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="List Music" image="list.bullet" catalog="system" id="gY3-Kh-ptJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="acK-LJ-FG3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xQB-fe-4eo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q95-5G-syy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="88.392857142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Pnj-HF-qcG">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="XYe-cL-Scq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dxn-xq-Fqy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bc6-ed-cxv" kind="relationship" relationship="viewControllers" id="hjW-z7-WRj"/>
+                        <segue destination="ksB-VL-xQS" kind="relationship" relationship="viewControllers" id="a6g-EQ-oDe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gU5-o5-xXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="438"/>
+        </scene>
+        <!--Download-->
+        <scene sceneID="DfG-Ud-JcS">
+            <objects>
+                <viewController id="ksB-VL-xQS" customClass="DownloadMusicViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tje-bI-s4W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ecz-TR-i7O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Download" image="square.and.arrow.down" catalog="system" id="Pd6-9D-lZc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cly-cN-zkV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="822"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list.bullet" catalog="system" width="128" height="88"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
