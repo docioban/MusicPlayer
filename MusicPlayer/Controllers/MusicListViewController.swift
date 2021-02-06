@@ -90,6 +90,17 @@ class MusicListViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.alpha = 0
+        let transform = CATransform3DTranslate(CATransform3DIdentity, -250, 0, 0)
+        cell.layer.transform = transform
+        
+        UIView.animate(withDuration: 1) {
+            cell.alpha = 1
+            cell.layer.transform = CATransform3DIdentity
+        }
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }

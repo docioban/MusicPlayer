@@ -1,34 +1,46 @@
 {
     "music": [
         {
-            "name": "First Song",
-            "author": "Author first song",
-            "fileName": "musicDefault",
+            "name": "Кадия",
+            "author": "Artur",
+            "fileName": "music1",
             "imageName": "image1"
         },
         {
-             "name": "Second Song",
-             "author": "Author second song",
-             "fileName": "musicDefault",
+             "name": "РАКЕТА",
+             "author": "Mikael, HOVO",
+             "fileName": "music2",
              "imageName": "image2"
         },
         {
-            "name": "Third Song",
-            "author": "Author third song",
-            "fileName": "musicDefault",
+            "name": "Венера-Юпитер",
+            "author": "Ваня Дмитриенко",
+            "fileName": "music3",
             "imageName": "image3",
         },
         {
-            "name": "Fourf Song",
-            "author": "Author fourf song",
-            "fileName": "musicDefault",
+            "name": "Эйя",
+            "author": "Канги",
+            "fileName": "music4",
             "imageName": "image4"
         },
         {
-            "name": "Fiv Song",
-            "author": "Author fiv song",
-            "fileName": "musicDefault",
+            "name": "Smack That",
+            "author": "Akon ft. Eminem",
+            "fileName": "music5",
             "imageName": "image5"
-        }
+        },
+        {
+            "name": "YAMAKASI",
+            "author": "Miyagi & Andy Panda",
+            "fileName": "music6",
+            "imageName": "image6"
+        },
+        {
+            "name": "Kalinka",
+            "author": "Morandi",
+            "fileName": "music7",
+            "imageName": "image7"
+        },
     ]
 }
